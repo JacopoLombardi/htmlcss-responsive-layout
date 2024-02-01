@@ -13,15 +13,9 @@ body{
    display: flex;
 }
 
-.column{
-   flex-direction: column;
-}
-
 .debug{
    background-color: rgba(199, 199, 199, 0.667);
 }
-
-
 
 
 
@@ -205,8 +199,16 @@ section.start.menu{
 
 
 /* FOOTER */
+.container.end-menu{
+   width: 90%;
+   height: 250px;
+   justify-content: center;
 
-
+}
+.end-menu .box{
+   width: 90%;
+   border: 1px solid;
+}
 
 
 
@@ -299,7 +301,6 @@ section.start.menu{
    /* get-started */
 
 
-
    /* footer */
 
 
@@ -374,12 +375,12 @@ section.start.menu{
    /* get-started */
 
 
+   /* footer */
 
 
 
 
 
-   
 
 
 }
