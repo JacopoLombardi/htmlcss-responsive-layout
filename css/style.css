@@ -96,19 +96,71 @@ section.start.menu{
 /* FINE HEADER */
 
 
+
+
 /* MAIN */
 
+/* SECTION STRATEGIC */
 .row.strategic{
+   width: 90%;
+   height: 1400px;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.strategic .col{
+   border: 1px solid;
+   width: 90%;
+   height: 46%;
+}
+
+/* SECTION TESTIMONIALS */
+.row.testimonials{
+   width: 90%;
+   height: 2150px;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.testimonials .box.title{
+   height: 350px;
+}
+
+.testimonials .box.review{
+   height: 500px;
+}
+
+.testimonials .box{
+   width: 90%;
+   border: 1px solid;
+}
+
+/* SECTION BENEFIT */
+.container.benefit{
+   width: 90%;
+   height: 2850px;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
    
 }
 
+.benefit .list{
+   flex-wrap: wrap;
+}
 
+.benefit .card{
+   width: 90%;
+   height: 400px;
+   border: 1px solid;
+}
 
-
-
-
-
-
+.benefit.title{
+   width: 90%;
+   height: 200px;
+   border: 1px solid;
+}
 
 
 
@@ -153,6 +205,36 @@ section.start.menu{
       flex-wrap: wrap;
    }
 
+   /* strategic */
+   .row.strategic{
+      height: 2100px;
+   }
+
+   
+   /* testimonials */
+   .row.testimonials{
+      height: 1300px;
+   }
+   
+   .testimonials .box.title,
+   .testimonials .box.review{
+         height: 300px;
+   }
+
+   /* benefit */
+   .container.benefit{
+      height: 1500px;
+      flex-wrap: nowrap;
+   }
+
+
+
+
+
+
+
+
+
 
 }
 
@@ -161,6 +243,7 @@ section.start.menu{
 /* DESKTOP IN POI */
 @media(min-width: 1200px){
 
+   /* start-menu */
    .box.nav{
       display: block;
       width: 50%;
@@ -175,11 +258,33 @@ section.start.menu{
       display: none;
    }
 
-
+   /* demo */
    .demo .box,
    .demo .first.row .box:first-child{
       height: 350px;
    }
+
+   /* strategic */
+   .row.strategic{
+      height: 940px;
+      flex-direction: row;
+   }
+
+   .strategic .col{
+      height: 80%;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
