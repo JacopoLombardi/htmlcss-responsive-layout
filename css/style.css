@@ -25,6 +25,10 @@ body{
    display: flex;
 }
 
+.column{
+   flex-direction: column;
+}
+
 .relative{
    position: relative;
 }
@@ -32,6 +36,11 @@ body{
 .absolute{
    position: absolute;
 }
+
+.btn{
+   border-radius: 30px;
+}
+
 
 .light-title{
    font-size: 15px;
@@ -86,11 +95,10 @@ section.start-menu{
    text-decoration: none;
 }
 
-.start-menu ul .btn.white.start-menu{
+.start-menu ul .btn.white{
    color: black;
    background-color: white;
    padding: 8px 10px;
-   border-radius: 20px;
 }
 
 
@@ -106,13 +114,11 @@ section.start-menu{
 
 .demo .card{
    width: 100%;
-   flex-direction: column;
 }
 
 .demo .card .first.row,
 .demo .card .second.row{
    width: 100%;
-   flex-direction: column;
 }
 
 .demo .first.row{
@@ -146,17 +152,16 @@ section.start-menu{
    text-align: left;
 }
 
-.box.btn.demo{
+.demo .box.btn{
    margin: 40px 20px;
 }
 
-.btn.blue.demo{
+.demo .btn.blue{
    text-decoration: none;
    color: white;
    padding: 10px 60px;
    font-weight: 800;
    background-color: rgb(0, 130, 250);
-   border-radius: 30px;
 }
 
 .img.get{
@@ -167,7 +172,6 @@ section.start-menu{
 
 .inner-box.get{
    padding-bottom: 0;
-   flex-direction: column;
 }
 
 .demo .down{
@@ -192,17 +196,17 @@ section.start-menu{
 
 
 
+
 /* MAIN */
 
 /* SECTION STRATEGIC */
 section.strategic{
-   background-color: rgb(151, 146, 228);
+   background-color: var(--lightpurple);
    padding-bottom: 0px;
 }
 
 .strategic .row{
    width: 100%;
-   flex-direction: column;
    justify-content: center;
    align-items: center;
 }
@@ -210,10 +214,6 @@ section.strategic{
 .strategic .col{
    width: 90%;
    height: auto;
-}
-
-.strategic .col{
-   flex-direction: column;
 }
 
 .strategic h4{
@@ -254,6 +254,7 @@ section.strategic{
    padding: 15px;
    margin-bottom: 20px;
 }
+
 
 
 
@@ -320,7 +321,6 @@ section.benefit{
 
 .container.benefit{
    width: 90%;
-   flex-direction: column;
    justify-content: space-between;
    align-items: center;
 }
@@ -366,13 +366,14 @@ section.benefit{
    background-color: var(--lightpurple);
    color: white;
    padding: 10px 50px;
-   border-radius: 30px;
    text-decoration: none;
 }
 
 .box.btn{
    margin-bottom: 20px;
 }
+
+
 
 
 /* ABOUT-US */
@@ -383,7 +384,6 @@ section.benefit{
 
 .about-us .box{
    width: 90%;
-   flex-direction: column;
    align-items: center;
 }
 
@@ -426,7 +426,6 @@ section.benefit{
    background-color: var(--lightpurple);
    padding: 4px 10px;
    text-decoration: none;
-   border-radius: 30px;
 }
 
 .about-us .box.btn{
@@ -475,7 +474,6 @@ p.esclamation{
    display: inline-block;
    background-color: white;
    padding: 20px 75px;
-   border-radius: 30px;
    margin: 30px 0;
 }
 
@@ -540,10 +538,11 @@ footer{
 
 
 
+/*-------------
+  MEDIA QUERY 
+--------------*/
 
 
-
-/* MEDIA QUERY */
 
 /* TABLET IN POI */
 @media(min-width: 768px){
@@ -557,10 +556,6 @@ footer{
    .container.demo{
       justify-content: center;
       margin: 80px auto;
-   }
-
-   .demo .col{
-      height: 560px;
    }
 
    .demo .first.row .col:first-child{
