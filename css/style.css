@@ -52,24 +52,25 @@ body{
 
 /* START-MENU */
 section.start-menu{
+   width: 100%;
    color: white;
    background-color: rgb(0, 130, 250);
+   justify-content: center;
+   z-index: 1;
 }
 
 .container.start-menu{
    height: 75px;
    align-items: center;
-   padding: 0 10px;
+   padding: 0 20px;
    margin: 0 auto;
 }
 
 .start-menu .box{
    width: 50%;
-   
 }
 
 .hamburger{
-   padding: 20px;
    width: 50%;
    text-align: right;
    font-size: 25px;
@@ -98,7 +99,9 @@ section.start-menu{
 /* DEMO */
 .container.demo{
    justify-content: center;
-   margin:0 20px;
+   margin-top: 100px;
+   margin-left: 20px;
+   margin-right: 20px;
 }
 
 .demo .card{
@@ -117,7 +120,6 @@ section.start-menu{
 }
 
 .demo .col{
-   border: 1px solid;
    width: 100%;
    height: auto;
    margin-top: 0px;
@@ -206,7 +208,6 @@ section.strategic{
 }
 
 .strategic .col{
-   border: 1px solid;
    width: 90%;
    height: auto;
 }
@@ -265,7 +266,6 @@ section.strategic{
 
 .testimonials .box{
    width: 90%;
-   border: 1px solid;
    flex-wrap: wrap;
    justify-content: center;
    padding: 0 20px;
@@ -333,8 +333,6 @@ section.benefit{
 
 .benefit .card{
    width: 100%;
-
-   border: 1px solid;
    margin: 20px 0;
    background-color: white;
    color: var(--lightpurple);
@@ -345,7 +343,6 @@ section.benefit{
 .benefit h3{
    max-width: 240px;
    font-size: 25px;
-   border: 1px solid;
    color: white;
    padding: 20px 0 40px 0;
    text-align: center;
@@ -393,7 +390,6 @@ section.benefit{
 .about-us .first.col{
    width: 100%;
    height: auto;
-   border: 1px solid;
 }
 
 .about-us h2{
@@ -410,7 +406,6 @@ section.benefit{
 .about-us .second.col{
    width: 100%;
    height: auto;
-   border: 1px solid;
    padding: 10px;
 }           
 
@@ -458,7 +453,6 @@ section.benefit{
    width: 75%;
    max-width: 600px;
    min-width: 230px;
-   border: 1px solid;
    text-align: center;
 }
 
@@ -518,7 +512,6 @@ footer{
    width: 90%;
    max-width: 420px;
    min-width: 230px;
-   border: 1px solid;
 }
 
 .end-menu p{
@@ -561,6 +554,11 @@ footer{
 
 
    /* demo */
+   .container.demo{
+      justify-content: center;
+      margin: 80px auto;
+   }
+
    .demo .col{
       height: 560px;
    }
@@ -705,7 +703,7 @@ footer{
 
    .box.link > li{
       display: inline-block;
-      margin: 0 13px;
+      margin: 0 12px;
    }
 
    .hamburger{
@@ -730,14 +728,8 @@ footer{
    }
 
    .img.get{
-      width: 256px;
+      width: 260px;
    }
-
-
-
-
-
-
 
 
 
