@@ -10,7 +10,7 @@ body{
 
 .container{
    width: 100%;
-   margin: 0 auto;
+   margin: 50px auto;
 }
 
 .img{
@@ -60,10 +60,12 @@ section.start-menu{
    height: 75px;
    align-items: center;
    padding: 0 10px;
+   margin: 0 auto;
 }
 
 .start-menu .box{
    width: 50%;
+   
 }
 
 .hamburger{
@@ -96,6 +98,7 @@ section.start-menu{
 /* DEMO */
 .container.demo{
    justify-content: center;
+   margin:0 20px;
 }
 
 .demo .card{
@@ -136,7 +139,7 @@ section.start-menu{
 }
 
 .demo .inner-box.get p{
-   line-height: 150%;
+   line-height: 170%;
    font-weight: 500;
    text-align: left;
 }
@@ -192,7 +195,7 @@ section.start-menu{
 /* SECTION STRATEGIC */
 section.strategic{
    background-color: rgb(151, 146, 228);
-   padding-bottom: 60px;
+   padding-bottom: 0px;
 }
 
 .strategic .row{
@@ -224,7 +227,7 @@ section.strategic{
 }
 
 .strategic .second.col{
-   margin-top: 20px;
+   margin-top: 40px;
    padding: 10px;
    background-color: white;
    border-radius: 50px;
@@ -237,7 +240,7 @@ section.strategic{
 
 .strategic .second.col p{
    text-align: center;
-   margin: 20px 0 50px 0;
+   margin: 20px 0 40px 0;
    font-style: oblique;
    color: black;
 }
@@ -248,6 +251,7 @@ section.strategic{
    background-color: var(--lightpurple);
    text-align: center;
    padding: 15px;
+   margin-bottom: 20px;
 }
 
 
@@ -255,13 +259,8 @@ section.strategic{
 /* SECTION TESTIMONIALS */
 .testimonials .row{
    width: 90%;
-   height: 2150px;
    flex-wrap: wrap;
    justify-content: center;
-}
-
-.testimonials .box.review{
-   height: 500px;
 }
 
 .testimonials .box{
@@ -273,6 +272,11 @@ section.strategic{
    margin-top: 30px;
 }
 
+.testimonials .box.title,
+.testimonials .box.review{
+   text-align: center;
+}
+
 .testimonials p.light-title{
    color: rgb(41, 41, 41);
    font-size: 18px;
@@ -280,34 +284,31 @@ section.strategic{
 }
 
 .testimonials h2{
-   text-align: center;
    font-size: 30px;
    color: var(--lightpurple);
+   margin: 20px 0;
 }
 
 .testimonials p{
-   text-align: center;
-   line-height: 170%;
+
+   line-height: 180%;
+   margin-bottom: 20px;
 }
 
 .box.review{
    background-color: var(--lightpurple);
    border-radius: 50px;
-   padding: 20px 20px;
+   padding: 20px;
    color: white;
 }
 
-
-.box-img{
-   width: 50%;
+.img.testimonials{
+   width: 200px;
+   height: 200px;
+   object-fit: cover;
+   border-radius: 50%;
+   margin-bottom: 20px;
 }
-
-
-
-
-
-
-
 
 
 
@@ -315,7 +316,6 @@ section.strategic{
 /* SECTION BENEFIT */
 section.benefit{
    background-color: var(--lightpurple);
-   padding-bottom: 50px;
 }
 
 .container.benefit{
@@ -339,7 +339,7 @@ section.benefit{
    background-color: white;
    color: var(--lightpurple);
    border-radius: 30px;
-   padding: 30px;
+   padding: 20px;
 }
 
 .benefit h3{
@@ -347,7 +347,7 @@ section.benefit{
    font-size: 25px;
    border: 1px solid;
    color: white;
-   padding: 50px 0;
+   padding: 20px 0 40px 0;
    text-align: center;
 }
 
@@ -356,11 +356,11 @@ section.benefit{
 }
 
 .benefit h4{
-   margin-top: 30px;
+   margin-top: 20px;
 }
 
 .benefit p{
-   margin: 30px 0;
+   margin: 20px 0 30px 0;
    line-height: 170%;
    color: black;
 }
@@ -398,13 +398,13 @@ section.benefit{
 
 .about-us h2{
    color: var(--lightpurple);
-   margin: 50px 0 30px 0;
-   font-size: 30px;
+   margin: 30px 0 30px 0;
+   font-size: 50px;
 }
 
 .about-us .first.col p{
    line-height: 220%;
-   margin-bottom: 50px;
+   margin-bottom: 30px;
 }
 
 .about-us .second.col{
@@ -435,7 +435,7 @@ section.benefit{
 }
 
 .about-us .box.btn{
-   margin-bottom: 70px;
+   margin-bottom: 40px;
 }
 
 
@@ -446,7 +446,6 @@ section.benefit{
 .get-started{
    background-color: var(--lightpurple);
    color: white;
-   padding-bottom: 20px;
 }
 
 .container.get-started{
@@ -456,7 +455,7 @@ section.benefit{
 }
 
 .get-started .box{
-   width: 80%;
+   width: 75%;
    max-width: 600px;
    min-width: 230px;
    border: 1px solid;
@@ -470,7 +469,7 @@ h4{
 p.esclamation{
    font-size: 50px;
    font-weight: 800;
-   padding: 40px 0;
+   padding: 20px 0;
    color: rgb(253, 193, 95);
 }
 
@@ -483,7 +482,7 @@ p.esclamation{
    background-color: white;
    padding: 20px 75px;
    border-radius: 30px;
-   margin: 50px 0;
+   margin: 30px 0;
 }
 
 .get-started .btn a{
@@ -504,19 +503,16 @@ p.esclamation{
 
 
 
-
 /* FOOTER */
 footer{
    background-color: rgb(51, 51, 51);
    font-size: 14px;
-   padding-bottom: 20px;
 }
 
 .container.end-menu{
    width: 75%;
    justify-content: center;
    color: white;
-
 }
 .end-menu .box{
    width: 90%;
@@ -526,13 +522,15 @@ footer{
 }
 
 .end-menu p{
-   padding-top: 60px;
    text-align: center;
+}
+
+.end-menu p:nth-child(1){
+   margin-bottom: 50px;
 }
 
 .end-menu a{
    color: var(--lightpurple);
-   text-align: center;
 }
 
 
@@ -608,13 +606,22 @@ footer{
 
 
    /* testimonials */
-   .row.testimonials{
-      height: 1300px;
+   .testimonials .box.review{
+      justify-content: space-between;
+      align-items: center;
    }
    
-   .testimonials .box.title,
+   .testimonials .box-img{
+      margin-top: 20px;
+      width: 35%;
+   }
+
+   .testimonials .box-text{
+      width: 60%;
+   }
+
    .testimonials .box.review{
-         height: 300px;
+      text-align: left;
    }
 
 
@@ -655,7 +662,7 @@ footer{
    
    .about-us .second.col{
       width: 34%;
-      margin-top: 50px;
+      margin-top: 20px;
    }           
 
 
@@ -768,6 +775,20 @@ footer{
    .second.col p{
       margin-bottom: 30px;
    }
+
+
+
+
+
+   /* testimonials */
+   .testimonials .box-img{
+      width: 25%;
+   }
+
+   .testimonials .box-text{
+      width: 75%;
+   }
+
 
 
 
